@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>342383569924-ptqeljrve27pnqi0or1hh4adom16s2lo.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.342383569924-ptqeljrve27pnqi0or1hh4adom16s2lo</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAO4_2fT-wNkiO0bcxqbxrM7E2DLtrj3yM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>342383569924</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.supremo.Polycon-EasyLife</string>
+	<key>PROJECT_ID</key>
+	<string>polyconeasylife</string>
+	<key>STORAGE_BUCKET</key>
+	<string>polyconeasylife.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:342383569924:ios:7e7af40dd3d7ce225e1951</string>
+	<key>DATABASE_URL</key>
+	<string>https://polyconeasylife.firebaseio.com</string>
+</dict>
+</plist>

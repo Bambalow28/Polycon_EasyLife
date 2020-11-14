@@ -1,0 +1,6 @@
+framework module Pods_Polycon_EasyLife {
+  umbrella header "Pods-Polycon EasyLife-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C742C3DB869ACFA2D4F3632 /* Pods_Polycon_EasyLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FEE43D31AB5504F7E54F287 /* Pods_Polycon_EasyLife.framework */; };
+		FF02FDF72547E18800570166 /* invAddPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF02FDF62547E18800570166 /* invAddPart.swift */; };
+		FF02FDFA2547E1CE00570166 /* employeeAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF02FDF92547E1CE00570166 /* employeeAdd.swift */; };
+		FF2523DD2545140C00AC004F /* scheduleViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2523DC2545140C00AC004F /* scheduleViewer.swift */; };
+		FF2523E02545143400AC004F /* inventoryViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2523DF2545143400AC004F /* inventoryViewer.swift */; };
+		FF2523E42545145900AC004F /* employeeViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2523E32545145900AC004F /* employeeViewer.swift */; };
+		FF2523E92545301200AC004F /* inventoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2523E82545301200AC004F /* inventoryCell.swift */; };
+		FF2F7E95254682E500C016B7 /* employeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F7E94254682E500C016B7 /* employeeCell.swift */; };
+		FF3838A3254292C4004247B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF3838A2254292C4004247B4 /* GoogleService-Info.plist */; };
+		FF3838B925429726004247B4 /* addParts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3838B825429726004247B4 /* addParts.swift */; };
+		FF3838BD2542A2C4004247B4 /* fetchParts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3838BC2542A2C4004247B4 /* fetchParts.swift */; };
+		FF70D2D72541467500144B27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70D2D62541467500144B27 /* AppDelegate.swift */; };
+		FF70D2D92541467500144B27 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70D2D82541467500144B27 /* SceneDelegate.swift */; };
+		FF70D2DE2541467500144B27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF70D2DC2541467500144B27 /* Main.storyboard */; };
+		FF70D2E02541467600144B27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF70D2DF2541467600144B27 /* Assets.xcassets */; };
+		FF70D2E32541467600144B27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF70D2E12541467600144B27 /* LaunchScreen.storyboard */; };
+		FF70D2EC254148A700144B27 /* loginMagna.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70D2EB254148A700144B27 /* loginMagna.swift */; };
+		FF70D2F025414BEF00144B27 /* unloaderAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70D2EF25414BEF00144B27 /* unloaderAccess.swift */; };
+		FF70D2F325414BFF00144B27 /* sequenceAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70D2F225414BFF00144B27 /* sequenceAccess.swift */; };
+		FF70D2F82541595E00144B27 /* sequenceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70D2F72541595E00144B27 /* sequenceTableViewCell.swift */; };
+		FF7D510525605BB5005FF999 /* scheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7D510425605BB5005FF999 /* scheduleCell.swift */; };
+		FFBD18D725448E6200095F6F /* lineLeaderAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBD18D625448E6200095F6F /* lineLeaderAccess.swift */; };
+		FFD6BAE425440930006DD9F2 /* unloaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD6BAE325440930006DD9F2 /* unloaderTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0844F9DC7460157C06EE3B43 /* Pods-Polycon EasyLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Polycon EasyLife.release.xcconfig"; path = "Target Support Files/Pods-Polycon EasyLife/Pods-Polycon EasyLife.release.xcconfig"; sourceTree = "<group>"; };
+		31FFEB3F55640627FFA68851 /* Pods-Polycon EasyLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Polycon EasyLife.debug.xcconfig"; path = "Target Support Files/Pods-Polycon EasyLife/Pods-Polycon EasyLife.debug.xcconfig"; sourceTree = "<group>"; };
+		8FEE43D31AB5504F7E54F287 /* Pods_Polycon_EasyLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Polycon_EasyLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF02FDF62547E18800570166 /* invAddPart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = invAddPart.swift; sourceTree = "<group>"; };
+		FF02FDF92547E1CE00570166 /* employeeAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = employeeAdd.swift; sourceTree = "<group>"; };
+		FF2523DC2545140C00AC004F /* scheduleViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleViewer.swift; sourceTree = "<group>"; };
+		FF2523DF2545143400AC004F /* inventoryViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inventoryViewer.swift; sourceTree = "<group>"; };
+		FF2523E32545145900AC004F /* employeeViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = employeeViewer.swift; sourceTree = "<group>"; };
+		FF2523E82545301200AC004F /* inventoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inventoryCell.swift; sourceTree = "<group>"; };
+		FF2F7E94254682E500C016B7 /* employeeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = employeeCell.swift; sourceTree = "<group>"; };
+		FF3838A2254292C4004247B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FF3838B825429726004247B4 /* addParts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addParts.swift; sourceTree = "<group>"; };
+		FF3838BC2542A2C4004247B4 /* fetchParts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fetchParts.swift; sourceTree = "<group>"; };
+		FF70D2D32541467500144B27 /* PEL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PEL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF70D2D62541467500144B27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF70D2D82541467500144B27 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FF70D2DD2541467500144B27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF70D2DF2541467600144B27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF70D2E22541467600144B27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF70D2E42541467600144B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF70D2EB254148A700144B27 /* loginMagna.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginMagna.swift; sourceTree = "<group>"; };
+		FF70D2EF25414BEF00144B27 /* unloaderAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unloaderAccess.swift; sourceTree = "<group>"; };
+		FF70D2F225414BFF00144B27 /* sequenceAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sequenceAccess.swift; sourceTree = "<group>"; };
+		FF70D2F72541595E00144B27 /* sequenceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sequenceTableViewCell.swift; sourceTree = "<group>"; };
+		FF7D510425605BB5005FF999 /* scheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleCell.swift; sourceTree = "<group>"; };
+		FFBD18D625448E6200095F6F /* lineLeaderAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lineLeaderAccess.swift; sourceTree = "<group>"; };
+		FFD6BAE325440930006DD9F2 /* unloaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unloaderTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF70D2D02541467500144B27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C742C3DB869ACFA2D4F3632 /* Pods_Polycon_EasyLife.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7EA203F0A3E3F80944E4F739 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31FFEB3F55640627FFA68851 /* Pods-Polycon EasyLife.debug.xcconfig */,
+				0844F9DC7460157C06EE3B43 /* Pods-Polycon EasyLife.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C8AA5E7F867DBB06264689EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8FEE43D31AB5504F7E54F287 /* Pods_Polycon_EasyLife.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF70D2CA2541467500144B27 = {
+			isa = PBXGroup;
+			children = (
+				FF70D2D52541467500144B27 /* Polycon EasyLife */,
+				FF70D2D42541467500144B27 /* Products */,
+				7EA203F0A3E3F80944E4F739 /* Pods */,
+				C8AA5E7F867DBB06264689EC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FF70D2D42541467500144B27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF70D2D32541467500144B27 /* PEL.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF70D2D52541467500144B27 /* Polycon EasyLife */ = {
+			isa = PBXGroup;
+			children = (
+				FF70D2D62541467500144B27 /* AppDelegate.swift */,
+				FF70D2D82541467500144B27 /* SceneDelegate.swift */,
+				FF70D2EB254148A700144B27 /* loginMagna.swift */,
+				FF70D2EF25414BEF00144B27 /* unloaderAccess.swift */,
+				FF70D2F225414BFF00144B27 /* sequenceAccess.swift */,
+				FFBD18D625448E6200095F6F /* lineLeaderAccess.swift */,
+				FF70D2F72541595E00144B27 /* sequenceTableViewCell.swift */,
+				FFD6BAE325440930006DD9F2 /* unloaderTableViewCell.swift */,
+				FF2523E82545301200AC004F /* inventoryCell.swift */,
+				FF2F7E94254682E500C016B7 /* employeeCell.swift */,
+				FF7D510425605BB5005FF999 /* scheduleCell.swift */,
+				FF2523DC2545140C00AC004F /* scheduleViewer.swift */,
+				FF2523DF2545143400AC004F /* inventoryViewer.swift */,
+				FF2523E32545145900AC004F /* employeeViewer.swift */,
+				FF3838B825429726004247B4 /* addParts.swift */,
+				FF02FDF62547E18800570166 /* invAddPart.swift */,
+				FF02FDF92547E1CE00570166 /* employeeAdd.swift */,
+				FF3838BC2542A2C4004247B4 /* fetchParts.swift */,
+				FF70D2DC2541467500144B27 /* Main.storyboard */,
+				FF70D2DF2541467600144B27 /* Assets.xcassets */,
+				FF70D2E12541467600144B27 /* LaunchScreen.storyboard */,
+				FF3838A2254292C4004247B4 /* GoogleService-Info.plist */,
+				FF70D2E42541467600144B27 /* Info.plist */,
+			);
+			path = "Polycon EasyLife";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF70D2D22541467500144B27 /* Polycon EasyLife */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF70D2E72541467600144B27 /* Build configuration list for PBXNativeTarget "Polycon EasyLife" */;
+			buildPhases = (
+				2A11A65AF0235253BABC075E /* [CP] Check Pods Manifest.lock */,
+				FF70D2CF2541467500144B27 /* Sources */,
+				FF70D2D02541467500144B27 /* Frameworks */,
+				FF70D2D12541467500144B27 /* Resources */,
+				3AE8B9933E29593469643090 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Polycon EasyLife";
+			productName = "Polycon EasyLife";
+			productReference = FF70D2D32541467500144B27 /* PEL.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF70D2CB2541467500144B27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					FF70D2D22541467500144B27 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = FF70D2CE2541467500144B27 /* Build configuration list for PBXProject "Polycon EasyLife" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF70D2CA2541467500144B27;
+			productRefGroup = FF70D2D42541467500144B27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF70D2D22541467500144B27 /* Polycon EasyLife */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF70D2D12541467500144B27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF70D2E32541467600144B27 /* LaunchScreen.storyboard in Resources */,
+				FF3838A3254292C4004247B4 /* GoogleService-Info.plist in Resources */,
+				FF70D2E02541467600144B27 /* Assets.xcassets in Resources */,
+				FF70D2DE2541467500144B27 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A11A65AF0235253BABC075E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Polycon EasyLife-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3AE8B9933E29593469643090 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Polycon EasyLife/Pods-Polycon EasyLife-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Polycon EasyLife/Pods-Polycon EasyLife-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Polycon EasyLife/Pods-Polycon EasyLife-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF70D2CF2541467500144B27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF70D2EC254148A700144B27 /* loginMagna.swift in Sources */,
+				FF70D2D72541467500144B27 /* AppDelegate.swift in Sources */,
+				FF70D2F82541595E00144B27 /* sequenceTableViewCell.swift in Sources */,
+				FF70D2D92541467500144B27 /* SceneDelegate.swift in Sources */,
+				FF2523E02545143400AC004F /* inventoryViewer.swift in Sources */,
+				FF3838B925429726004247B4 /* addParts.swift in Sources */,
+				FF2523E92545301200AC004F /* inventoryCell.swift in Sources */,
+				FF2523DD2545140C00AC004F /* scheduleViewer.swift in Sources */,
+				FF02FDFA2547E1CE00570166 /* employeeAdd.swift in Sources */,
+				FF02FDF72547E18800570166 /* invAddPart.swift in Sources */,
+				FF7D510525605BB5005FF999 /* scheduleCell.swift in Sources */,
+				FFD6BAE425440930006DD9F2 /* unloaderTableViewCell.swift in Sources */,
+				FF2F7E95254682E500C016B7 /* employeeCell.swift in Sources */,
+				FF70D2F025414BEF00144B27 /* unloaderAccess.swift in Sources */,
+				FF70D2F325414BFF00144B27 /* sequenceAccess.swift in Sources */,
+				FFBD18D725448E6200095F6F /* lineLeaderAccess.swift in Sources */,
+				FF3838BD2542A2C4004247B4 /* fetchParts.swift in Sources */,
+				FF2523E42545145900AC004F /* employeeViewer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FF70D2DC2541467500144B27 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF70D2DD2541467500144B27 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF70D2E12541467600144B27 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF70D2E22541467600144B27 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF70D2E52541467600144B27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF70D2E62541467600144B27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF70D2E82541467600144B27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31FFEB3F55640627FFA68851 /* Pods-Polycon EasyLife.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YL9V25DQWZ;
+				INFOPLIST_FILE = "Polycon EasyLife/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.supremo.Polycon-EasyLife";
+				PRODUCT_NAME = PEL;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF70D2E92541467600144B27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0844F9DC7460157C06EE3B43 /* Pods-Polycon EasyLife.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YL9V25DQWZ;
+				INFOPLIST_FILE = "Polycon EasyLife/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.supremo.Polycon-EasyLife";
+				PRODUCT_NAME = PEL;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF70D2CE2541467500144B27 /* Build configuration list for PBXProject "Polycon EasyLife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF70D2E52541467600144B27 /* Debug */,
+				FF70D2E62541467600144B27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF70D2E72541467600144B27 /* Build configuration list for PBXNativeTarget "Polycon EasyLife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF70D2E82541467600144B27 /* Debug */,
+				FF70D2E92541467600144B27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF70D2CB2541467500144B27 /* Project object */;
+}
