@@ -27,7 +27,7 @@ class unloaderAccess: UIViewController,UITableViewDelegate, UITableViewDataSourc
         getPartStatus()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         self.tableView.reloadData()
     }
     

@@ -6,8 +6,17 @@
 //
 
 import UIKit
+import Firebase
 
 class invAddPart: UIViewController {
+    
+    @IBOutlet weak var partName: UITextField!
+    @IBOutlet weak var paintColour: UITextField!
+    @IBOutlet weak var partCount: UITextField!
+    @IBOutlet weak var storageLocation: UITextField!
+    @IBOutlet weak var addBtn: UIButton!
+    
+    let db = Firestore.firestore()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,5 +57,31 @@ class invAddPart: UIViewController {
     
     @IBAction func backClicked(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func addPartClicked(_ sender: Any) {
+        
+        let ref = db.collection("inventoryParts")
+        
+        ref.document().setData([
+            "partName": partName.text!,
+            "paintColour": paintColour.text!,
+            "countNum": partCount.text!,
+            "storageLocation": storageLocation.text!
+
+        ]) { err in
+            if let err = err {
+                print("Error adding document: \(err)")
+            } else {
+                self.addBtn.setTitle("Added!", for: .normal)
+                self.addBtn.backgroundColor = UIColor.systemGreen
+                
+                let sec = 1.0
+                DispatchQueue.main.asyncAfter(deadline: .now() + sec) {
+                    self.addBtn.setTitle("ADD PART", for: .normal)
+                    self.addBtn.backgroundColor = UIColor.systemBlue
+                }
+            }
+        }
     }
 }

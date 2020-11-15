@@ -27,7 +27,7 @@ class sequenceAccess: UIViewController,UITableViewDelegate,UITableViewDataSource
         getPartInfo()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         self.tableView.reloadData()
     }
     
