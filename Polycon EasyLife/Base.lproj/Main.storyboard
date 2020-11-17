@@ -252,94 +252,61 @@
             </objects>
             <point key="canvasLocation" x="141" y="863"/>
         </scene>
-        <!--LINE LEADER-->
+        <!--HOME-->
         <scene sceneID="l3P-Eo-roB">
             <objects>
-                <viewController storyboardIdentifier="lineLead" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Yke-mX-eBZ" customClass="lineLeaderAccess" customModule="PEL" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="f2J-My-OLd">
+                <viewController storyboardIdentifier="lineLeaderAccess" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Yke-mX-eBZ" customClass="lineLeaderAccess" customModule="PEL" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="f2J-My-OLd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqf-ub-xt8">
-                                <rect key="frame" x="72.5" y="347" width="269" height="62"/>
-                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="62" id="LAh-r8-ZzH"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="269" id="mnc-90-Ny0"/>
-                                </constraints>
-                                <state key="normal" title="SCHEDULE">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="scheduleClicked:" destination="Yke-mX-eBZ" eventType="touchUpInside" id="w7X-wJ-idW"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elR-Kf-xtd">
-                                <rect key="frame" x="72.5" y="417" width="269" height="62"/>
-                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="62" id="617-9N-AFA"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="269" id="VgO-1e-9vB"/>
-                                </constraints>
-                                <state key="normal" title="INVENTORY">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="inventoryClicked:" destination="Yke-mX-eBZ" eventType="touchUpInside" id="VbM-v2-CLu"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNx-IH-cHX">
-                                <rect key="frame" x="72.5" y="487" width="269" height="62"/>
-                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="62" id="MRr-u7-X88"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="269" id="ivs-jb-cuE"/>
-                                </constraints>
-                                <state key="normal" title="EMPLOYEES">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="employeesClicked:" destination="Yke-mX-eBZ" eventType="touchUpInside" id="3V2-xX-Gqa"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magna" translatesAutoresizingMaskIntoConstraints="NO" id="k2D-nN-Kgl">
-                                <rect key="frame" x="20" y="124" width="374" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="uxy-1R-kwJ"/>
-                                    <constraint firstAttribute="width" constant="374" id="xnM-pV-VxM"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xzs-NY-16e">
-                                <rect key="frame" x="72.5" y="557" width="269" height="62"/>
-                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="269" id="1aD-H8-RnU"/>
-                                    <constraint firstAttribute="height" constant="62" id="fyE-Db-sfO"/>
-                                </constraints>
-                                <state key="normal" title="COMMUNICATION">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="employeesClicked:" destination="Yke-mX-eBZ" eventType="touchUpInside" id="Z09-up-9cM"/>
-                                </connections>
-                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nA4-ES-t5s">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem image="house" catalog="system" id="iel-Hk-ETm">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="homeClicked:" destination="Yke-mX-eBZ" id="Lv1-cU-3ZZ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="uwr-pW-udm"/>
+                                    <barButtonItem image="folder" catalog="system" id="fvO-Ed-yY9">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="inventoryClicked:" destination="Yke-mX-eBZ" id="mgd-t1-aIC"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="WJw-eX-TGY"/>
+                                    <barButtonItem image="message" catalog="system" id="NJD-1f-cwS">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="communicationClicked:" destination="Yke-mX-eBZ" id="ByB-QF-e3w"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="sWs-2D-uqS"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="x22-dq-ZM1"/>
+                                    <barButtonItem image="calendar" catalog="system" id="9Ks-st-yrs">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="scheduleClicked:" destination="Yke-mX-eBZ" id="iGo-TH-8KO"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="21Y-f2-bqp"/>
+                                    <barButtonItem image="person" catalog="system" id="eav-76-p83">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="employeesClicked:" destination="Yke-mX-eBZ" id="QVp-2w-1Ni"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </toolbar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lZF-by-bxm"/>
                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                        <constraints>
-                            <constraint firstItem="xzs-NY-16e" firstAttribute="centerX" secondItem="f2J-My-OLd" secondAttribute="centerX" id="5g0-gh-UN5"/>
-                            <constraint firstItem="rqf-ub-xt8" firstAttribute="centerX" secondItem="f2J-My-OLd" secondAttribute="centerX" id="9VZ-45-qfB"/>
-                            <constraint firstItem="zNx-IH-cHX" firstAttribute="centerY" secondItem="f2J-My-OLd" secondAttribute="centerY" constant="70" id="EaG-ht-KcZ"/>
-                            <constraint firstItem="k2D-nN-Kgl" firstAttribute="centerX" secondItem="f2J-My-OLd" secondAttribute="centerX" id="EbP-5U-8yb"/>
-                            <constraint firstItem="zNx-IH-cHX" firstAttribute="centerX" secondItem="f2J-My-OLd" secondAttribute="centerX" id="Pmc-sV-onO"/>
-                            <constraint firstItem="rqf-ub-xt8" firstAttribute="centerY" secondItem="f2J-My-OLd" secondAttribute="centerY" constant="-70" id="RNj-lZ-cK5"/>
-                            <constraint firstItem="k2D-nN-Kgl" firstAttribute="centerY" secondItem="f2J-My-OLd" secondAttribute="centerY" constant="-260" id="biD-R8-Gp5"/>
-                            <constraint firstItem="elR-Kf-xtd" firstAttribute="centerX" secondItem="f2J-My-OLd" secondAttribute="centerX" id="daX-Kh-h1W"/>
-                            <constraint firstItem="xzs-NY-16e" firstAttribute="centerY" secondItem="f2J-My-OLd" secondAttribute="centerY" constant="140" id="hFA-7d-CpL"/>
-                            <constraint firstItem="elR-Kf-xtd" firstAttribute="centerY" secondItem="f2J-My-OLd" secondAttribute="centerY" id="y9N-Yl-cdp"/>
-                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="LINE LEADER" id="78N-JC-gPZ">
+                    <navigationItem key="navigationItem" title="HOME" id="78N-JC-gPZ">
                         <barButtonItem key="leftBarButtonItem" image="arrow.uturn.right" catalog="system" id="Obx-xw-TuS">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -373,11 +340,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eSG-a4-xM9">
-                                <rect key="frame" x="20" y="205" width="374" height="657"/>
+                                <rect key="frame" x="20" y="205" width="374" height="586"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="iwo-96-SLf"/>
-                                    <constraint firstAttribute="height" constant="657" id="n6u-2M-Srh"/>
+                                    <constraint firstAttribute="height" constant="586" id="n6u-2M-Srh"/>
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="scheduleCell" rowHeight="182" id="Gkn-Vl-ZHe" customClass="scheduleCell" customModule="PEL" customModuleProvider="target">
@@ -600,23 +567,59 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vTP-EZ-57m">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem image="house" catalog="system" id="roG-KZ-ehh">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="homeClicked:" destination="iOH-Fe-NIF" id="gCT-AN-CYw"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="IjZ-92-HlI"/>
+                                    <barButtonItem image="folder" catalog="system" id="bd3-Ua-OOW">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="inventoryClicked:" destination="iOH-Fe-NIF" id="1QV-HE-yJo"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="m1T-rU-ahs"/>
+                                    <barButtonItem image="message" catalog="system" id="EQ1-GY-hM4">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="communicationClicked:" destination="iOH-Fe-NIF" id="uHX-GL-XUd"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="eSV-9f-wGH"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="mPM-mk-wpI"/>
+                                    <barButtonItem image="calendar" catalog="system" id="dGT-Hf-2Pr">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="scheduleClicked:" destination="iOH-Fe-NIF" id="iQ2-eR-CRD"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="quM-sm-uAW"/>
+                                    <barButtonItem image="person" catalog="system" id="rkv-BI-4lF">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="employeesClicked:" destination="iOH-Fe-NIF" id="dx5-ep-iNb"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </toolbar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jna-ET-Gdv"/>
                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                         <constraints>
                             <constraint firstItem="vzR-iy-c6t" firstAttribute="centerY" secondItem="ixq-2a-XNn" secondAttribute="centerY" constant="-287" id="TAx-3X-aXH"/>
-                            <constraint firstItem="eSG-a4-xM9" firstAttribute="centerY" secondItem="ixq-2a-XNn" secondAttribute="centerY" constant="85.5" id="dhk-9k-Xij"/>
+                            <constraint firstItem="eSG-a4-xM9" firstAttribute="centerY" secondItem="ixq-2a-XNn" secondAttribute="centerY" constant="50" id="dhk-9k-Xij"/>
                             <constraint firstItem="vzR-iy-c6t" firstAttribute="centerX" secondItem="ixq-2a-XNn" secondAttribute="centerX" id="hRv-da-nDS"/>
                             <constraint firstItem="eSG-a4-xM9" firstAttribute="centerX" secondItem="ixq-2a-XNn" secondAttribute="centerX" id="v5F-AZ-gzy"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="SCHEDULE VIEWER" id="fEP-ar-jy1">
-                        <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" id="EZz-zh-kte">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <action selector="backClicked:" destination="iOH-Fe-NIF" id="AWP-pl-3Kp"/>
-                            </connections>
-                        </barButtonItem>
                         <rightBarButtonItems>
                             <barButtonItem image="plus" catalog="system" id="ayp-vE-GZM">
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -645,10 +648,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ay7-lX-4Jy">
-                                <rect key="frame" x="20" y="133" width="374" height="763"/>
+                                <rect key="frame" x="20" y="133" width="374" height="646"/>
                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="763" id="goe-tb-WIY"/>
+                                    <constraint firstAttribute="height" constant="646" id="goe-tb-WIY"/>
                                     <constraint firstAttribute="width" constant="374" id="skn-0u-tTj"/>
                                 </constraints>
                                 <prototypes>
@@ -794,24 +797,63 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VCe-i6-HAM">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem image="house" catalog="system" id="J93-5G-qrY">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="homeClicked:" destination="GAl-9n-KLW" id="TKq-il-MvE"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="wlj-z7-BkD"/>
+                                    <barButtonItem image="folder" catalog="system" id="qCM-7f-p2z">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="inventoryClicked:" destination="GAl-9n-KLW" id="pJB-mt-Kc0"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="krC-1d-8R1"/>
+                                    <barButtonItem image="message" catalog="system" id="iE3-es-jAW">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="communicationClicked:" destination="GAl-9n-KLW" id="zuP-Yx-s73"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Yfe-La-Eas"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="Mq4-PT-amq"/>
+                                    <barButtonItem image="calendar" catalog="system" id="oQ3-Dl-cQz">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="scheduleClicked:" destination="GAl-9n-KLW" id="Epa-aZ-F69"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="aGb-8u-AxT"/>
+                                    <barButtonItem image="person" catalog="system" id="xtb-c9-4Yf">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="employeesClicked:" destination="GAl-9n-KLW" id="A79-v4-KJj"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </toolbar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Juu-TE-zeO"/>
                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                         <constraints>
-                            <constraint firstItem="Ay7-lX-4Jy" firstAttribute="centerY" secondItem="K3d-ow-Zfp" secondAttribute="centerY" constant="66.5" id="sR6-Oh-DTf"/>
+                            <constraint firstItem="Ay7-lX-4Jy" firstAttribute="centerY" secondItem="K3d-ow-Zfp" secondAttribute="centerY" constant="8" id="sR6-Oh-DTf"/>
                             <constraint firstItem="Ay7-lX-4Jy" firstAttribute="centerX" secondItem="K3d-ow-Zfp" secondAttribute="centerX" id="tLl-7h-9Vy"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="INVENTORY" id="VOr-Vh-A8b">
-                        <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" id="mo9-eO-Wqg">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <action selector="backClicked:" destination="GAl-9n-KLW" id="zDz-uL-q9d"/>
-                            </connections>
-                        </barButtonItem>
                         <rightBarButtonItems>
                             <barButtonItem image="magnifyingglass" catalog="system" id="oU2-Db-p1O">
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="searchBtnClicked:" destination="GAl-9n-KLW" id="IqJ-BE-IkB"/>
+                                </connections>
                             </barButtonItem>
                             <barButtonItem image="plus" catalog="system" id="B6d-ZU-fZh">
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -944,6 +986,48 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Drn-ZA-ieR">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem image="house" catalog="system" id="1f0-AV-iNQ">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="homeClicked:" destination="2ZK-N4-PGI" id="JMT-6o-mXJ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="ndc-jr-rVc"/>
+                                    <barButtonItem image="folder" catalog="system" id="lx7-LS-wKY">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="inventoryClicked:" destination="2ZK-N4-PGI" id="Ww4-hX-sNy"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Exr-6u-8Nf"/>
+                                    <barButtonItem image="message" catalog="system" id="ifj-04-qqD">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="communicationClicked:" destination="2ZK-N4-PGI" id="V2K-3C-7Mb"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="b45-aJ-ga3"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="gg6-09-Vov"/>
+                                    <barButtonItem image="calendar" catalog="system" id="m6m-Yy-JDY">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="scheduleClicked:" destination="2ZK-N4-PGI" id="cpE-mp-OEo"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="J0F-6H-vKU"/>
+                                    <barButtonItem image="person" catalog="system" id="JzI-Ho-hWy">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="employeeClicked:" destination="2ZK-N4-PGI" id="BjM-nu-8Mg"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </toolbar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IUQ-eJ-QzH"/>
                         <color key="backgroundColor" systemColor="systemGrayColor"/>
@@ -990,6 +1074,100 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="529-eI-0iv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1700.0000000000002" y="2205.1339285714284"/>
+        </scene>
+        <!--Inv Search-->
+        <scene sceneID="rsl-wg-ul0">
+            <objects>
+                <viewController storyboardIdentifier="invSearch" modalTransitionStyle="crossDissolve" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TPl-kE-1bj" customClass="invSearch" customModule="PEL" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fXf-U9-aIV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wcC-ic-qKk">
+                                <rect key="frame" x="20" y="635" width="374" height="128"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZLR-Nl-Xrd">
+                                        <rect key="frame" x="8" y="8" width="358" height="50"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Kz6-2m-Ca2">
+                                                <rect key="frame" x="8" y="9" width="37" height="32"/>
+                                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="37" id="GwY-yc-Lzq"/>
+                                                    <constraint firstAttribute="height" constant="34" id="qmD-Bw-3u5"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ldg-lm-4gk">
+                                                <rect key="frame" x="53" y="8" width="297" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="Dh2-md-MPb"/>
+                                                    <constraint firstAttribute="width" constant="297" id="tTW-UG-qk2"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qct-iB-27f">
+                                                <rect key="frame" x="53" y="38" width="297" height="1"/>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="5CL-42-pbJ"/>
+                                                    <constraint firstAttribute="width" constant="297" id="rMc-7A-QPd"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.85306305139243199" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="8WG-8n-uhO"/>
+                                            <constraint firstItem="Kz6-2m-Ca2" firstAttribute="centerY" secondItem="ZLR-Nl-Xrd" secondAttribute="centerY" id="9wa-td-yxm"/>
+                                            <constraint firstItem="Qct-iB-27f" firstAttribute="centerY" secondItem="ZLR-Nl-Xrd" secondAttribute="centerY" constant="13.5" id="VKg-n6-JCR"/>
+                                            <constraint firstItem="Qct-iB-27f" firstAttribute="centerX" secondItem="ZLR-Nl-Xrd" secondAttribute="centerX" constant="22.5" id="Vdv-bu-Ybl"/>
+                                            <constraint firstItem="ldg-lm-4gk" firstAttribute="centerX" secondItem="ZLR-Nl-Xrd" secondAttribute="centerX" constant="22.5" id="bim-Gd-R8J"/>
+                                            <constraint firstAttribute="width" constant="358" id="d5b-zw-ZZG"/>
+                                            <constraint firstItem="ldg-lm-4gk" firstAttribute="centerY" secondItem="ZLR-Nl-Xrd" secondAttribute="centerY" id="eV2-i7-4Yv"/>
+                                            <constraint firstItem="Kz6-2m-Ca2" firstAttribute="centerX" secondItem="ZLR-Nl-Xrd" secondAttribute="centerX" constant="-152.5" id="qZA-dI-feA"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOj-mG-4fb">
+                                        <rect key="frame" x="109.5" y="73" width="155" height="37"/>
+                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="155" id="TJt-4y-mlv"/>
+                                            <constraint firstAttribute="height" constant="37" id="nUs-Xg-QM2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Search">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="1HB-RL-MOx"/>
+                                    <constraint firstItem="UOj-mG-4fb" firstAttribute="centerX" secondItem="wcC-ic-qKk" secondAttribute="centerX" id="8Xh-Zf-XjX"/>
+                                    <constraint firstItem="UOj-mG-4fb" firstAttribute="centerY" secondItem="wcC-ic-qKk" secondAttribute="centerY" constant="27.5" id="A51-bN-tTE"/>
+                                    <constraint firstItem="ZLR-Nl-Xrd" firstAttribute="centerX" secondItem="wcC-ic-qKk" secondAttribute="centerX" id="auc-I2-CZ0"/>
+                                    <constraint firstAttribute="height" constant="128" id="eDk-C1-mvs"/>
+                                    <constraint firstItem="ZLR-Nl-Xrd" firstAttribute="centerY" secondItem="wcC-ic-qKk" secondAttribute="centerY" constant="-31" id="ruZ-1p-Fkm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9mF-VX-I1l"/>
+                        <color key="backgroundColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wcC-ic-qKk" firstAttribute="centerX" secondItem="fXf-U9-aIV" secondAttribute="centerX" id="HcA-9D-KDP"/>
+                            <constraint firstItem="wcC-ic-qKk" firstAttribute="centerY" secondItem="fXf-U9-aIV" secondAttribute="centerY" constant="251" id="Urw-0T-pkz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="searchBar" destination="ZLR-Nl-Xrd" id="p5u-5Q-TOe"/>
+                        <outlet property="searchBtn" destination="UOj-mG-4fb" id="sxj-Fh-cGS"/>
+                        <outlet property="searchView" destination="wcC-ic-qKk" id="rfl-tq-Pim"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o5Q-ij-jio" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1700.0000000000002" y="2901.5625"/>
         </scene>
         <!--ADD EMPLOYEE-->
         <scene sceneID="k9u-9Y-SGn">
@@ -1073,7 +1251,7 @@
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TlW-lD-DLA">
                                 <rect key="frame" x="211" y="634" width="167" height="49"/>
-                                <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.81424207669315918" green="0.015244005577730658" blue="0.0" alpha="0.56999999999999995" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="167" id="KDJ-RZ-hix"/>
                                     <constraint firstAttribute="height" constant="49" id="oJN-ev-Naa"/>
@@ -1117,7 +1295,7 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNC-Kt-Scu">
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNC-Kt-Scu">
                                 <rect key="frame" x="85" y="140" width="242" height="245.5"/>
                                 <color key="backgroundColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -1132,6 +1310,48 @@
                                     <action selector="addEmployeePhoto:" destination="GLl-XL-NuC" eventType="touchUpInside" id="Zui-Ad-D3s"/>
                                 </connections>
                             </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yww-4t-kl6">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem image="house" catalog="system" id="QcB-EW-vck">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="homeClicked:" destination="GLl-XL-NuC" id="s3a-fl-hHm"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="AYP-CU-0hl"/>
+                                    <barButtonItem image="folder" catalog="system" id="uyk-KW-nuO">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="inventoryClicked:" destination="GLl-XL-NuC" id="fWn-hq-ML0"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="peV-A0-Ti2"/>
+                                    <barButtonItem image="message" catalog="system" id="pOh-BN-YdL">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="communicationClicked:" destination="GLl-XL-NuC" id="iY7-vN-jA0"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Y25-ui-KVF"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="sla-5f-hHm"/>
+                                    <barButtonItem image="calendar" catalog="system" id="ckY-bZ-c8W">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="scheduleClicked:" destination="GLl-XL-NuC" id="GUF-Uq-0vC"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="KMU-hp-7St"/>
+                                    <barButtonItem image="person" catalog="system" id="Xt6-ut-cP1">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="employeeClicked:" destination="GLl-XL-NuC" id="sRp-EO-ZHN"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </toolbar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XpV-Iy-84W"/>
                         <color key="backgroundColor" systemColor="systemGrayColor"/>
@@ -1170,6 +1390,7 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="addEmployeeBtn" destination="QIo-cN-TtB" id="xws-bZ-1TH"/>
                         <outlet property="employeeName" destination="BBN-N9-W2m" id="aVF-hn-dTM"/>
                         <outlet property="employeeNum" destination="KJE-Qn-Mrv" id="iOS-cv-aQ8"/>
                         <outlet property="magnaBtn" destination="TlW-lD-DLA" id="yeH-JN-D2v"/>
@@ -1190,10 +1411,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="D2s-Ja-1A7">
-                                <rect key="frame" x="20" y="133" width="374" height="763"/>
+                                <rect key="frame" x="20" y="133" width="374" height="654"/>
                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="763" id="2qN-6V-pCM"/>
+                                    <constraint firstAttribute="height" constant="654" id="2qN-6V-pCM"/>
                                     <constraint firstAttribute="width" constant="374" id="QLb-mQ-AG6"/>
                                 </constraints>
                                 <prototypes>
@@ -1301,21 +1522,57 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GdU-MA-SO9">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem image="house" catalog="system" id="w5h-A7-wZQ">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="homeClicked:" destination="olR-rL-07G" id="qdR-ky-kxQ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="ahe-Jm-Ujn"/>
+                                    <barButtonItem image="folder" catalog="system" id="hgK-G9-ggb">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="inventoryClicked:" destination="olR-rL-07G" id="a6c-TS-FOe"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="PWI-o3-gHD"/>
+                                    <barButtonItem image="message" catalog="system" id="29p-Vr-D4b">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="communicationClicked:" destination="olR-rL-07G" id="aDi-Ra-qmm"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="jDL-CW-i7J"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="RKe-yu-O6s"/>
+                                    <barButtonItem image="calendar" catalog="system" id="tld-pp-YxR">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="scheduleClicked:" destination="olR-rL-07G" id="Zh8-4S-8hP"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="qZw-JP-08B"/>
+                                    <barButtonItem image="person" catalog="system" id="f3S-xp-fiF">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="employeesClicked:" destination="olR-rL-07G" id="RJN-QT-Ppq"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </toolbar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xgY-s2-Buc"/>
                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                         <constraints>
-                            <constraint firstItem="D2s-Ja-1A7" firstAttribute="centerY" secondItem="CTu-qO-jHL" secondAttribute="centerY" constant="66.5" id="KIJ-WO-y35"/>
+                            <constraint firstItem="D2s-Ja-1A7" firstAttribute="centerY" secondItem="CTu-qO-jHL" secondAttribute="centerY" constant="12" id="KIJ-WO-y35"/>
                             <constraint firstItem="D2s-Ja-1A7" firstAttribute="centerX" secondItem="CTu-qO-jHL" secondAttribute="centerX" id="jdG-aT-wTT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="EMPLOYEES" id="CSi-z9-UwW">
-                        <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" id="0m2-Be-Wdm">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <action selector="backClicked:" destination="olR-rL-07G" id="P1W-Bs-HLK"/>
-                            </connections>
-                        </barButtonItem>
                         <rightBarButtonItems>
                             <barButtonItem image="magnifyingglass" catalog="system" id="7mr-WD-vGD">
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1749,9 +2006,12 @@
         <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="exclamationmark.triangle" catalog="system" width="128" height="112"/>
+        <image name="folder" catalog="system" width="128" height="97"/>
+        <image name="house" catalog="system" width="128" height="106"/>
         <image name="magna" width="1200" height="282"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="message" catalog="system" width="128" height="113"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.badge.plus" catalog="system" width="128" height="124"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="profilePhoto" width="1367" height="1367"/>

@@ -157,7 +157,7 @@ class loginMagna: UIViewController {
     
     func transitionToLineLeader() {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let newViewController = storyBoard.instantiateViewController(withIdentifier: "lineLead") as! lineLeaderAccess
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "lineLeaderAccess") as! lineLeaderAccess
 
         let navController = UINavigationController(rootViewController: newViewController)
         
