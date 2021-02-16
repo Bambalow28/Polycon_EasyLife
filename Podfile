@@ -9,5 +9,7 @@ target 'Polycon EasyLife' do
 
   pod 'Firebase/Firestore'
   pod 'FirebaseFirestoreSwift'
+  pod 'DropDown'
+  pod 'SwiftSoup'
 
 end

@@ -14,6 +14,7 @@ class employeeCell: UITableViewCell {
     @IBOutlet weak var employeeName: UILabel!
     @IBOutlet weak var employeeNum: UILabel!
     @IBOutlet weak var workStatus: UILabel!
+    @IBOutlet weak var screenerResult: UILabel!
     
     
     override func awakeFromNib() {

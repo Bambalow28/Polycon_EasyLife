@@ -34,6 +34,9 @@ class addParts: UIViewController {
         partColour.layer.borderWidth = 1.0
         partColour.layer.borderColor = UIColor.black.cgColor
         
+        partNumber.layer.borderWidth = 1.0
+        partNumber.layer.borderColor = UIColor.black.cgColor
+        
         fullBtn.layer.borderWidth = 2.0
         emptyBtn.layer.borderWidth = 2.0
         almostfullBtn.layer.borderWidth = 2.0

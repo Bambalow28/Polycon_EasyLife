@@ -11,7 +11,10 @@ import Firebase
 class employeeViewer: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
-    var employeeNum = ["921088107"]
+    
+    let db = Firestore.firestore()
+    
+    var employeeNum = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +23,8 @@ class employeeViewer: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        getEmployeeInfo()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -38,6 +43,32 @@ class employeeViewer: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.employeeName.text = "Joshua Alanis"
         cell.employeeNum.text = employeeNumber
         cell.workStatus.text = "WORKING"
+        
+        cell.employeeCellView.frame = cell.frame.offsetBy(dx: 30, dy: 10);
+        
+        
+        db.collection("employeeScreenerResults").whereField("Team Leader", isEqualTo: "Thai Phan")
+            .getDocuments() { (querySnapshot, err) in
+                if let err = err {
+                    print("Error getting documents: \(err)")
+                } else {
+                    for document in querySnapshot!.documents {
+                        let result = document.get("Result") as! String
+                        
+                        switch result {
+                        case "CAREFUL":
+                            cell.screenerResult.backgroundColor = UIColor.systemOrange
+                        case "PASSED":
+                            cell.screenerResult.backgroundColor = UIColor.systemGreen
+                        case "FAIL":
+                            cell.screenerResult.backgroundColor = UIColor.systemRed
+                        default:
+                            print("Error")
+                        }
+                        cell.screenerResult.text! = result
+                    }
+                }
+            }
         
         return cell
     }
@@ -118,5 +149,32 @@ class employeeViewer: UIViewController, UITableViewDelegate, UITableViewDataSour
         let addEmployeeController = storyBoard.instantiateViewController(withIdentifier: "employeeAdd") as! employeeAdd
         
         self.navigationController?.pushViewController(addEmployeeController, animated: true)
+    }
+    
+    func getEmployeeInfo() {
+        db.collection("employeeAccounts").whereField("Team Leader", isEqualTo: "Thai Phan").getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for employee in querySnapshot!.documents {
+                    
+                    let dictionary = employee.data() as [String : Any]
+                    
+                    let empName = dictionary["Full Name"] as? String
+                    let empID = employee.documentID
+                    let empLead = dictionary["Team Leader"] as? String
+                    
+                    if let employeeName = empName {
+                        if let employeeLead = empLead {
+                            self.employeeNum.append(empID)
+                        }
+                    }
+
+                    DispatchQueue.main.async {
+                        self.tableView.reloadData()
+                    }
+                }
+            }
+        }
     }
 }

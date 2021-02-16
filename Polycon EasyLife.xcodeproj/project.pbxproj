@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C742C3DB869ACFA2D4F3632 /* Pods_Polycon_EasyLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FEE43D31AB5504F7E54F287 /* Pods_Polycon_EasyLife.framework */; };
+		4CBCE7ACF00B5A8D4AA48A02 /* Pods_Polycon_EasyLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA054C0BF32B69CCF1479266 /* Pods_Polycon_EasyLife.framework */; };
 		FF02FDF72547E18800570166 /* invAddPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF02FDF62547E18800570166 /* invAddPart.swift */; };
 		FF02FDFA2547E1CE00570166 /* employeeAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF02FDF92547E1CE00570166 /* employeeAdd.swift */; };
 		FF2523DD2545140C00AC004F /* scheduleViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2523DC2545140C00AC004F /* scheduleViewer.swift */; };
@@ -18,6 +18,13 @@
 		FF3838A3254292C4004247B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF3838A2254292C4004247B4 /* GoogleService-Info.plist */; };
 		FF3838B925429726004247B4 /* addParts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3838B825429726004247B4 /* addParts.swift */; };
 		FF3838BD2542A2C4004247B4 /* fetchParts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3838BC2542A2C4004247B4 /* fetchParts.swift */; };
+		FF6CB361257B6E850064B63D /* dailyScreenerResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6CB360257B6E850064B63D /* dailyScreenerResult.swift */; };
+		FF6CB37C257C8B150064B63D /* employeeDocumentsViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6CB37B257C8B150064B63D /* employeeDocumentsViewer.swift */; };
+		FF6CB37F257C8B2F0064B63D /* employeePaystubViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6CB37E257C8B2F0064B63D /* employeePaystubViewer.swift */; };
+		FF6CB382257C8B3C0064B63D /* employeeProfileViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6CB381257C8B3C0064B63D /* employeeProfileViewer.swift */; };
+		FF6CB385257D69B70064B63D /* employeeNotificationPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6CB384257D69B70064B63D /* employeeNotificationPopover.swift */; };
+		FF6CB3AC257DC2810064B63D /* employeeNotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6CB3AB257DC2810064B63D /* employeeNotificationCell.swift */; };
+		FF6CB3F1257F457A0064B63D /* createAccountAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6CB3F0257F457A0064B63D /* createAccountAccess.swift */; };
 		FF70D2D72541467500144B27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70D2D62541467500144B27 /* AppDelegate.swift */; };
 		FF70D2D92541467500144B27 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70D2D82541467500144B27 /* SceneDelegate.swift */; };
 		FF70D2DE2541467500144B27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF70D2DC2541467500144B27 /* Main.storyboard */; };
@@ -27,16 +34,21 @@
 		FF70D2F025414BEF00144B27 /* unloaderAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70D2EF25414BEF00144B27 /* unloaderAccess.swift */; };
 		FF70D2F325414BFF00144B27 /* sequenceAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70D2F225414BFF00144B27 /* sequenceAccess.swift */; };
 		FF70D2F82541595E00144B27 /* sequenceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70D2F72541595E00144B27 /* sequenceTableViewCell.swift */; };
+		FF72CD4325A58BE900FA033A /* customButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF72CD4225A58BE900FA033A /* customButton.swift */; };
+		FF7664082585A9640053340A /* changePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7664072585A9640053340A /* changePassword.swift */; };
+		FF7B0375257B4E2900308216 /* employeeAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7B0374257B4E2900308216 /* employeeAccess.swift */; };
 		FF7D510525605BB5005FF999 /* scheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7D510425605BB5005FF999 /* scheduleCell.swift */; };
 		FF95D5D325624FA600E49167 /* invSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF95D5D225624FA600E49167 /* invSearch.swift */; };
+		FFA46AC3257B5255004DD07A /* dailyScreenerViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA46AC2257B5255004DD07A /* dailyScreenerViewer.swift */; };
 		FFBD18D725448E6200095F6F /* lineLeaderAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBD18D625448E6200095F6F /* lineLeaderAccess.swift */; };
+		FFBD686025DA10E0008419F2 /* magnaScreener.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBD685F25DA10E0008419F2 /* magnaScreener.swift */; };
 		FFD6BAE425440930006DD9F2 /* unloaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD6BAE325440930006DD9F2 /* unloaderTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0844F9DC7460157C06EE3B43 /* Pods-Polycon EasyLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Polycon EasyLife.release.xcconfig"; path = "Target Support Files/Pods-Polycon EasyLife/Pods-Polycon EasyLife.release.xcconfig"; sourceTree = "<group>"; };
-		31FFEB3F55640627FFA68851 /* Pods-Polycon EasyLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Polycon EasyLife.debug.xcconfig"; path = "Target Support Files/Pods-Polycon EasyLife/Pods-Polycon EasyLife.debug.xcconfig"; sourceTree = "<group>"; };
-		8FEE43D31AB5504F7E54F287 /* Pods_Polycon_EasyLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Polycon_EasyLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4750E0624DEFB65BE145DE39 /* Pods-Polycon EasyLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Polycon EasyLife.debug.xcconfig"; path = "Target Support Files/Pods-Polycon EasyLife/Pods-Polycon EasyLife.debug.xcconfig"; sourceTree = "<group>"; };
+		A399945BFD96D218904D6DE2 /* Pods-Polycon EasyLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Polycon EasyLife.release.xcconfig"; path = "Target Support Files/Pods-Polycon EasyLife/Pods-Polycon EasyLife.release.xcconfig"; sourceTree = "<group>"; };
+		AA054C0BF32B69CCF1479266 /* Pods_Polycon_EasyLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Polycon_EasyLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF02FDF62547E18800570166 /* invAddPart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = invAddPart.swift; sourceTree = "<group>"; };
 		FF02FDF92547E1CE00570166 /* employeeAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = employeeAdd.swift; sourceTree = "<group>"; };
 		FF2523DC2545140C00AC004F /* scheduleViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleViewer.swift; sourceTree = "<group>"; };
@@ -47,6 +59,13 @@
 		FF3838A2254292C4004247B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FF3838B825429726004247B4 /* addParts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addParts.swift; sourceTree = "<group>"; };
 		FF3838BC2542A2C4004247B4 /* fetchParts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fetchParts.swift; sourceTree = "<group>"; };
+		FF6CB360257B6E850064B63D /* dailyScreenerResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dailyScreenerResult.swift; sourceTree = "<group>"; };
+		FF6CB37B257C8B150064B63D /* employeeDocumentsViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = employeeDocumentsViewer.swift; sourceTree = "<group>"; };
+		FF6CB37E257C8B2F0064B63D /* employeePaystubViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = employeePaystubViewer.swift; sourceTree = "<group>"; };
+		FF6CB381257C8B3C0064B63D /* employeeProfileViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = employeeProfileViewer.swift; sourceTree = "<group>"; };
+		FF6CB384257D69B70064B63D /* employeeNotificationPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = employeeNotificationPopover.swift; sourceTree = "<group>"; };
+		FF6CB3AB257DC2810064B63D /* employeeNotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = employeeNotificationCell.swift; sourceTree = "<group>"; };
+		FF6CB3F0257F457A0064B63D /* createAccountAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createAccountAccess.swift; sourceTree = "<group>"; };
 		FF70D2D32541467500144B27 /* PEL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PEL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF70D2D62541467500144B27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF70D2D82541467500144B27 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,9 +77,14 @@
 		FF70D2EF25414BEF00144B27 /* unloaderAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unloaderAccess.swift; sourceTree = "<group>"; };
 		FF70D2F225414BFF00144B27 /* sequenceAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sequenceAccess.swift; sourceTree = "<group>"; };
 		FF70D2F72541595E00144B27 /* sequenceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sequenceTableViewCell.swift; sourceTree = "<group>"; };
+		FF72CD4225A58BE900FA033A /* customButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customButton.swift; sourceTree = "<group>"; };
+		FF7664072585A9640053340A /* changePassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = changePassword.swift; sourceTree = "<group>"; };
+		FF7B0374257B4E2900308216 /* employeeAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = employeeAccess.swift; sourceTree = "<group>"; };
 		FF7D510425605BB5005FF999 /* scheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleCell.swift; sourceTree = "<group>"; };
 		FF95D5D225624FA600E49167 /* invSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = invSearch.swift; sourceTree = "<group>"; };
+		FFA46AC2257B5255004DD07A /* dailyScreenerViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dailyScreenerViewer.swift; sourceTree = "<group>"; };
 		FFBD18D625448E6200095F6F /* lineLeaderAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lineLeaderAccess.swift; sourceTree = "<group>"; };
+		FFBD685F25DA10E0008419F2 /* magnaScreener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = magnaScreener.swift; sourceTree = "<group>"; };
 		FFD6BAE325440930006DD9F2 /* unloaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unloaderTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,7 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C742C3DB869ACFA2D4F3632 /* Pods_Polycon_EasyLife.framework in Frameworks */,
+				4CBCE7ACF00B5A8D4AA48A02 /* Pods_Polycon_EasyLife.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,16 +103,16 @@
 		7EA203F0A3E3F80944E4F739 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				31FFEB3F55640627FFA68851 /* Pods-Polycon EasyLife.debug.xcconfig */,
-				0844F9DC7460157C06EE3B43 /* Pods-Polycon EasyLife.release.xcconfig */,
+				4750E0624DEFB65BE145DE39 /* Pods-Polycon EasyLife.debug.xcconfig */,
+				A399945BFD96D218904D6DE2 /* Pods-Polycon EasyLife.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		C8AA5E7F867DBB06264689EC /* Frameworks */ = {
+		C47C1DC8B3DBFB0BD1D39212 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8FEE43D31AB5504F7E54F287 /* Pods_Polycon_EasyLife.framework */,
+				AA054C0BF32B69CCF1479266 /* Pods_Polycon_EasyLife.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -99,7 +123,7 @@
 				FF70D2D52541467500144B27 /* Polycon EasyLife */,
 				FF70D2D42541467500144B27 /* Products */,
 				7EA203F0A3E3F80944E4F739 /* Pods */,
-				C8AA5E7F867DBB06264689EC /* Frameworks */,
+				C47C1DC8B3DBFB0BD1D39212 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,30 +140,74 @@
 			children = (
 				FF70D2D62541467500144B27 /* AppDelegate.swift */,
 				FF70D2D82541467500144B27 /* SceneDelegate.swift */,
-				FF95D5D225624FA600E49167 /* invSearch.swift */,
-				FF70D2EB254148A700144B27 /* loginMagna.swift */,
-				FF70D2EF25414BEF00144B27 /* unloaderAccess.swift */,
-				FF70D2F225414BFF00144B27 /* sequenceAccess.swift */,
-				FFBD18D625448E6200095F6F /* lineLeaderAccess.swift */,
-				FF70D2F72541595E00144B27 /* sequenceTableViewCell.swift */,
-				FFD6BAE325440930006DD9F2 /* unloaderTableViewCell.swift */,
-				FF2523E82545301200AC004F /* inventoryCell.swift */,
-				FF2F7E94254682E500C016B7 /* employeeCell.swift */,
-				FF7D510425605BB5005FF999 /* scheduleCell.swift */,
-				FF2523DC2545140C00AC004F /* scheduleViewer.swift */,
-				FF2523DF2545143400AC004F /* inventoryViewer.swift */,
-				FF2523E32545145900AC004F /* employeeViewer.swift */,
-				FF3838B825429726004247B4 /* addParts.swift */,
-				FF02FDF62547E18800570166 /* invAddPart.swift */,
-				FF02FDF92547E1CE00570166 /* employeeAdd.swift */,
-				FF3838BC2542A2C4004247B4 /* fetchParts.swift */,
+				FF7B037A257B4E9100308216 /* Add */,
+				FF7B0379257B4E7100308216 /* Viewer */,
+				FF7B0378257B4E5B00308216 /* Cells */,
+				FF7B0377257B4E3300308216 /* Access */,
 				FF70D2DC2541467500144B27 /* Main.storyboard */,
 				FF70D2DF2541467600144B27 /* Assets.xcassets */,
 				FF70D2E12541467600144B27 /* LaunchScreen.storyboard */,
 				FF3838A2254292C4004247B4 /* GoogleService-Info.plist */,
 				FF70D2E42541467600144B27 /* Info.plist */,
+				FF72CD4225A58BE900FA033A /* customButton.swift */,
 			);
 			path = "Polycon EasyLife";
+			sourceTree = "<group>";
+		};
+		FF7B0377257B4E3300308216 /* Access */ = {
+			isa = PBXGroup;
+			children = (
+				FF70D2EB254148A700144B27 /* loginMagna.swift */,
+				FF7B0374257B4E2900308216 /* employeeAccess.swift */,
+				FF70D2EF25414BEF00144B27 /* unloaderAccess.swift */,
+				FF70D2F225414BFF00144B27 /* sequenceAccess.swift */,
+				FFBD18D625448E6200095F6F /* lineLeaderAccess.swift */,
+				FF6CB3F0257F457A0064B63D /* createAccountAccess.swift */,
+			);
+			path = Access;
+			sourceTree = "<group>";
+		};
+		FF7B0378257B4E5B00308216 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FF70D2F72541595E00144B27 /* sequenceTableViewCell.swift */,
+				FFD6BAE325440930006DD9F2 /* unloaderTableViewCell.swift */,
+				FF2523E82545301200AC004F /* inventoryCell.swift */,
+				FF2F7E94254682E500C016B7 /* employeeCell.swift */,
+				FF7D510425605BB5005FF999 /* scheduleCell.swift */,
+				FF6CB3AB257DC2810064B63D /* employeeNotificationCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FF7B0379257B4E7100308216 /* Viewer */ = {
+			isa = PBXGroup;
+			children = (
+				FF2523DF2545143400AC004F /* inventoryViewer.swift */,
+				FF2523DC2545140C00AC004F /* scheduleViewer.swift */,
+				FF2523E32545145900AC004F /* employeeViewer.swift */,
+				FFA46AC2257B5255004DD07A /* dailyScreenerViewer.swift */,
+				FF6CB360257B6E850064B63D /* dailyScreenerResult.swift */,
+				FF6CB37B257C8B150064B63D /* employeeDocumentsViewer.swift */,
+				FF6CB37E257C8B2F0064B63D /* employeePaystubViewer.swift */,
+				FF6CB381257C8B3C0064B63D /* employeeProfileViewer.swift */,
+				FF6CB384257D69B70064B63D /* employeeNotificationPopover.swift */,
+				FFBD685F25DA10E0008419F2 /* magnaScreener.swift */,
+			);
+			path = Viewer;
+			sourceTree = "<group>";
+		};
+		FF7B037A257B4E9100308216 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				FF3838B825429726004247B4 /* addParts.swift */,
+				FF02FDF62547E18800570166 /* invAddPart.swift */,
+				FF02FDF92547E1CE00570166 /* employeeAdd.swift */,
+				FF3838BC2542A2C4004247B4 /* fetchParts.swift */,
+				FF95D5D225624FA600E49167 /* invSearch.swift */,
+				FF7664072585A9640053340A /* changePassword.swift */,
+			);
+			path = Add;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,11 +217,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF70D2E72541467600144B27 /* Build configuration list for PBXNativeTarget "Polycon EasyLife" */;
 			buildPhases = (
-				2A11A65AF0235253BABC075E /* [CP] Check Pods Manifest.lock */,
+				38467A4274E0DC3E45D3A284 /* [CP] Check Pods Manifest.lock */,
 				FF70D2CF2541467500144B27 /* Sources */,
 				FF70D2D02541467500144B27 /* Frameworks */,
 				FF70D2D12541467500144B27 /* Resources */,
-				3AE8B9933E29593469643090 /* [CP] Embed Pods Frameworks */,
+				0FCD609E64B9B362C21F161D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -211,7 +279,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2A11A65AF0235253BABC075E /* [CP] Check Pods Manifest.lock */ = {
+		0FCD609E64B9B362C21F161D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Polycon EasyLife/Pods-Polycon EasyLife-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Polycon EasyLife/Pods-Polycon EasyLife-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Polycon EasyLife/Pods-Polycon EasyLife-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38467A4274E0DC3E45D3A284 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -233,23 +318,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3AE8B9933E29593469643090 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Polycon EasyLife/Pods-Polycon EasyLife-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Polycon EasyLife/Pods-Polycon EasyLife-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Polycon EasyLife/Pods-Polycon EasyLife-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -257,24 +325,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF6CB385257D69B70064B63D /* employeeNotificationPopover.swift in Sources */,
 				FF70D2EC254148A700144B27 /* loginMagna.swift in Sources */,
+				FF6CB361257B6E850064B63D /* dailyScreenerResult.swift in Sources */,
+				FFA46AC3257B5255004DD07A /* dailyScreenerViewer.swift in Sources */,
 				FF70D2D72541467500144B27 /* AppDelegate.swift in Sources */,
 				FF70D2F82541595E00144B27 /* sequenceTableViewCell.swift in Sources */,
+				FF7664082585A9640053340A /* changePassword.swift in Sources */,
 				FF70D2D92541467500144B27 /* SceneDelegate.swift in Sources */,
 				FF2523E02545143400AC004F /* inventoryViewer.swift in Sources */,
 				FF3838B925429726004247B4 /* addParts.swift in Sources */,
 				FF2523E92545301200AC004F /* inventoryCell.swift in Sources */,
+				FF6CB3AC257DC2810064B63D /* employeeNotificationCell.swift in Sources */,
 				FF2523DD2545140C00AC004F /* scheduleViewer.swift in Sources */,
 				FF02FDFA2547E1CE00570166 /* employeeAdd.swift in Sources */,
+				FF72CD4325A58BE900FA033A /* customButton.swift in Sources */,
 				FF02FDF72547E18800570166 /* invAddPart.swift in Sources */,
+				FF6CB37C257C8B150064B63D /* employeeDocumentsViewer.swift in Sources */,
 				FF7D510525605BB5005FF999 /* scheduleCell.swift in Sources */,
 				FFD6BAE425440930006DD9F2 /* unloaderTableViewCell.swift in Sources */,
 				FF95D5D325624FA600E49167 /* invSearch.swift in Sources */,
+				FF6CB37F257C8B2F0064B63D /* employeePaystubViewer.swift in Sources */,
+				FF6CB3F1257F457A0064B63D /* createAccountAccess.swift in Sources */,
 				FF2F7E95254682E500C016B7 /* employeeCell.swift in Sources */,
 				FF70D2F025414BEF00144B27 /* unloaderAccess.swift in Sources */,
 				FF70D2F325414BFF00144B27 /* sequenceAccess.swift in Sources */,
 				FFBD18D725448E6200095F6F /* lineLeaderAccess.swift in Sources */,
+				FF7B0375257B4E2900308216 /* employeeAccess.swift in Sources */,
+				FF6CB382257C8B3C0064B63D /* employeeProfileViewer.swift in Sources */,
 				FF3838BD2542A2C4004247B4 /* fetchParts.swift in Sources */,
+				FFBD686025DA10E0008419F2 /* magnaScreener.swift in Sources */,
 				FF2523E42545145900AC004F /* employeeViewer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,7 +499,7 @@
 		};
 		FF70D2E82541467600144B27 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 31FFEB3F55640627FFA68851 /* Pods-Polycon EasyLife.debug.xcconfig */;
+			baseConfigurationReference = 4750E0624DEFB65BE145DE39 /* Pods-Polycon EasyLife.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -439,7 +519,7 @@
 		};
 		FF70D2E92541467600144B27 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0844F9DC7460157C06EE3B43 /* Pods-Polycon EasyLife.release.xcconfig */;
+			baseConfigurationReference = A399945BFD96D218904D6DE2 /* Pods-Polycon EasyLife.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
