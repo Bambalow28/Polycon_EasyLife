@@ -11,11 +11,13 @@ import WebKit
 class magnaScreener: UIViewController, UIWebViewDelegate {
     
     @IBOutlet weak var webView: WKWebView!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         title = "Magna Screener";
+        
+        webView.layer.cornerRadius = 10;
         
         let url = URL(string: "https://magnascreening.powerappsportals.com/en-US/");
         let request = URLRequest(url: url!);
@@ -28,14 +30,14 @@ class magnaScreener: UIViewController, UIWebViewDelegate {
         webView.load(request);
     }
     
+    @IBAction func sendClicked(_ sender: Any) {
+        print("Sent Clicked");
+    }
+    
     @IBAction func automateClicked(_ sender: Any) {
+        
         //Click Agree Button
         webView.evaluateJavaScript("document.querySelector('body > div.page-copy > div > div > div > table > tbody > tr > td > div > div > a.btn.btn-primary.button').click()");
-        
-        //Choose 'Temp Worker'
-        let sec = 1.0;
-        DispatchQueue.main.asyncAfter(deadline: .now() + sec) {
-            self.webView.evaluateJavaScript("document.getElementById('cr3e3_visitortype_1').checked = true");
             
             //Select Country Search Button
             let secTwo = 2.0;
@@ -68,7 +70,7 @@ class magnaScreener: UIViewController, UIWebViewDelegate {
             }
             
             //Select Polycon
-            let secSeven = 8.0;
+            let secSeven = 8.5;
             DispatchQueue.main.asyncAfter(deadline: .now() + secSeven) {
                 self.webView.evaluateJavaScript("document.querySelector('#cr3e3_divisionlookup_lookupmodal > div > section > div > div > div.modal-body > div.entity-grid > div.view-grid.has-pagination > table > tbody > tr:nth-child(10) > td:nth-child(2)').click()");
             }
@@ -85,28 +87,28 @@ class magnaScreener: UIViewController, UIWebViewDelegate {
                 self.webView.evaluateJavaScript("document.querySelector('#NextButton').click()")
             }
             
-            //Input ID Number
+            //Input First Name
             let secEleven = 13.0
             DispatchQueue.main.asyncAfter(deadline: .now() + secEleven) {
-                self.webView.evaluateJavaScript("document.querySelector('#cr3e3_who_field1').value = '921088107';")
-            }
-            
-            //Input First Name
-            let secTwelve = 13.5
-            DispatchQueue.main.asyncAfter(deadline: .now() + secTwelve) {
                 self.webView.evaluateJavaScript("document.querySelector('#cr3e3_who_field2').value = 'Joshua';")
             }
             
             //Input Last Name
-            let secThirteen = 14.0
-            DispatchQueue.main.asyncAfter(deadline: .now() + secThirteen) {
+            let secTwelve = 13.5
+            DispatchQueue.main.asyncAfter(deadline: .now() + secTwelve) {
                 self.webView.evaluateJavaScript("document.querySelector('#cr3e3_who_field3').value = 'Alanis';")
             }
             
             //Input Mobile Number
+            let secThirteen = 14.0
+            DispatchQueue.main.asyncAfter(deadline: .now() + secThirteen) {
+                self.webView.evaluateJavaScript("document.querySelector('#cr3e3_who_field4').value = '2269797607';")
+            }
+            
+            //Input Badge Number
             let secFourteen = 14.5
             DispatchQueue.main.asyncAfter(deadline: .now() + secFourteen) {
-                self.webView.evaluateJavaScript("document.querySelector('#cr3e3_who_field4').value = '2269797607';")
+                self.webView.evaluateJavaScript("document.querySelector('#cr3e3_who_field5').value = '5586';")
             }
             
             //Next
@@ -162,10 +164,6 @@ class magnaScreener: UIViewController, UIWebViewDelegate {
             DispatchQueue.main.asyncAfter(deadline: .now() + secTwentyThree) {
                 self.webView.evaluateJavaScript("document.querySelector('#NextButton').click()")
             }
-            
-            
+
         }
-        
-        
-    }
 }

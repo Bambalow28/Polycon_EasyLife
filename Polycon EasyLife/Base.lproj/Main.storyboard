@@ -2383,7 +2383,7 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="UT7-kO-afm"/>
-                                    <barButtonItem title="AUTOMATE" id="VCJ-bo-AYv">
+                                    <barButtonItem title="START" image="play.fill" catalog="system" id="VCJ-bo-AYv">
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <action selector="automateClicked:" destination="J9S-bF-B2r" id="ZNW-T4-kcZ"/>
@@ -2399,12 +2399,12 @@
                                 </items>
                                 <color key="barTintColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </toolbar>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Axw-eY-oJL">
-                                <rect key="frame" x="20" y="134" width="374" height="645"/>
+                            <wkWebView clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Axw-eY-oJL">
+                                <rect key="frame" x="20" y="134" width="374" height="637"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="2ko-Js-B6M"/>
-                                    <constraint firstAttribute="height" constant="645" id="zGg-GM-nMb"/>
+                                    <constraint firstAttribute="height" constant="637" id="zGg-GM-nMb"/>
                                 </constraints>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -2416,15 +2416,23 @@
                         <color key="backgroundColor" red="0.070588235289999995" green="0.070588235289999995" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Axw-eY-oJL" firstAttribute="centerX" secondItem="Y06-wU-bKV" secondAttribute="centerX" id="DKG-D8-sgR"/>
-                            <constraint firstItem="Axw-eY-oJL" firstAttribute="centerY" secondItem="Y06-wU-bKV" secondAttribute="centerY" constant="8.5" id="ikz-Jo-4xj"/>
+                            <constraint firstItem="Axw-eY-oJL" firstAttribute="centerY" secondItem="Y06-wU-bKV" secondAttribute="centerY" constant="4.5" id="ikz-Jo-4xj"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Magna Screener" id="kA8-9t-seO">
-                        <barButtonItem key="rightBarButtonItem" image="arrow.clockwise" catalog="system" id="u9X-6B-zmX">
+                        <barButtonItem key="leftBarButtonItem" image="arrow.clockwise" catalog="system" id="u9X-6B-zmX">
                             <connections>
                                 <action selector="refreshClicked:" destination="J9S-bF-B2r" id="ppm-gv-6R9"/>
                             </connections>
                         </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem image="plus" catalog="system" id="l7q-CX-ktE"/>
+                            <barButtonItem image="paperplane" catalog="system" id="kdU-Z7-qWu">
+                                <connections>
+                                    <action selector="sendClicked:" destination="J9S-bF-B2r" id="R0c-8t-31K"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
@@ -3622,9 +3630,11 @@
         <image name="magna" width="1200" height="282"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="message" catalog="system" width="128" height="113"/>
+        <image name="paperplane" catalog="system" width="128" height="118"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.badge.plus" catalog="system" width="128" height="124"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="play.fill" catalog="system" width="116" height="128"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="profilePhoto" width="1367" height="1367"/>
         <image name="questionmark" catalog="system" width="96" height="128"/>
