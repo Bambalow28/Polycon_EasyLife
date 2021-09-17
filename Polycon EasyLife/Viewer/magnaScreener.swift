@@ -66,13 +66,13 @@ class magnaScreener: UIViewController, UIWebViewDelegate {
             //Select Page 4
             let secSix = 7.0;
             DispatchQueue.main.asyncAfter(deadline: .now() + secSix) {
-                self.webView.evaluateJavaScript("document.querySelector('#cr3e3_divisionlookup_lookupmodal > div > section > div > div > div.modal-body > div.entity-grid > div.view-pagination > div > ul > li:nth-child(5) > a').click()");
+                self.webView.evaluateJavaScript("document.querySelector('#cr3e3_divisionlookup_lookupmodal > div > section > div > div > div.modal-body > div.entity-grid > div.view-pagination > div > ul > li:nth-child(6) > a').click()");
             }
             
             //Select Polycon
             let secSeven = 8.5;
             DispatchQueue.main.asyncAfter(deadline: .now() + secSeven) {
-                self.webView.evaluateJavaScript("document.querySelector('#cr3e3_divisionlookup_lookupmodal > div > section > div > div > div.modal-body > div.entity-grid > div.view-grid.has-pagination > table > tbody > tr:nth-child(10) > td:nth-child(2)').click()");
+                self.webView.evaluateJavaScript("document.querySelector('#cr3e3_divisionlookup_lookupmodal > div > section > div > div > div.modal-body > div.entity-grid > div.view-grid.has-pagination > table > tbody > tr:nth-child(10) > td:nth-child(0)').click()");
             }
             
             //Click 'Select'
